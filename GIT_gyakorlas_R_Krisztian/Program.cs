@@ -8,6 +8,11 @@ namespace GIT_gyakorlas_R_Krisztian
 {
     class Program
     {
+        static void SorozatKiir() 
+        {
+
+        }
+
         static void Main(string[] args)
         {
         }
