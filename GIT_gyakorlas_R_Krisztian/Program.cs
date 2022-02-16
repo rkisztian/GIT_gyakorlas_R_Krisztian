@@ -10,15 +10,17 @@ namespace GIT_gyakorlas_R_Krisztian
     {
         static void SorozatKiir() 
         {
-            Console.Write("Kérem adjon meg egy számot ami nagyobb mint egy: ");
-            int szam = int.Parse(Console.ReadLine());
-            if (szam <= 1) 
+            Console.Write("Kérem adjon meg egy minumumot ");
+            int minimum = int.Parse(Console.ReadLine());
+            Console.Write("Kérem adjon meg egy maximumot");
+            int maximum = int.Parse(Console.ReadLine());
+            if (minimum >= maximum) 
             {
-                Console.WriteLine("Nem megfelelő számot adott meg");
+                Console.WriteLine("Nem külnbözik, vagy nem nagyobb a maximum a minimumnál!");
             }
             else 
             {
-            for (int i = 1; i < szam; i++)
+            for (int i = minimum; i < maximum; i++)
                         {
                             Console.WriteLine(i + 1);
             }
