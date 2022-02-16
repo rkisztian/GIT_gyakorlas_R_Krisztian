@@ -10,10 +10,20 @@ namespace GIT_gyakorlas_R_Krisztian
     {
         static void SorozatKiir() 
         {
-            for (int i = 1; i < 11; i++)
+            Console.Write("Kérem adjon meg egy számot ami nagyobb mint egy: ");
+            int szam = int.Parse(Console.ReadLine());
+            if (szam <= 1) 
             {
-                Console.WriteLine(i);
+                Console.WriteLine("Nem megfelelő számot adott meg");
             }
+            else 
+            {
+            for (int i = 1; i < szam; i++)
+                        {
+                            Console.WriteLine(i + 1);
+            }
+            }
+            
         }
 
         static void Main(string[] args)
